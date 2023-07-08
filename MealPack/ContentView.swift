@@ -8,19 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = ViewModel()
+
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView{
+            VStack {
+                ForEach(viewModel.recipes, id: \.self) { recipe in
+                    RecipePreview(recipe: recipe)
+                        .padding(.bottom, 4.0)
+                        .padding(.top, 4.0)
+                    Divider()
+                }
+                Spacer()
+            }
+            .padding()
+            .navigationTitle("Recipes")
         }
-        .padding()
+        
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
+

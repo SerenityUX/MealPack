@@ -14,6 +14,10 @@
 		430E27932A59C65E008344BB /* MealPackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E27922A59C65E008344BB /* MealPackTests.swift */; };
 		430E279D2A59C65E008344BB /* MealPackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E279C2A59C65E008344BB /* MealPackUITests.swift */; };
 		430E279F2A59C65E008344BB /* MealPackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E279E2A59C65E008344BB /* MealPackUITestsLaunchTests.swift */; };
+		430E27AC2A59C6D9008344BB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E27AB2A59C6D9008344BB /* ViewModel.swift */; };
+		430E27AE2A59C734008344BB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E27AD2A59C734008344BB /* Model.swift */; };
+		430E27B12A59D645008344BB /* RecipePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E27B02A59D645008344BB /* RecipePreview.swift */; };
+		430E27B32A59D722008344BB /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E27B22A59D722008344BB /* AsyncImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		430E27982A59C65E008344BB /* MealPackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealPackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		430E279C2A59C65E008344BB /* MealPackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPackUITests.swift; sourceTree = "<group>"; };
 		430E279E2A59C65E008344BB /* MealPackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		430E27AB2A59C6D9008344BB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		430E27AD2A59C734008344BB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		430E27B02A59D645008344BB /* RecipePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePreview.swift; sourceTree = "<group>"; };
+		430E27B22A59D722008344BB /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,9 @@
 			children = (
 				430E27812A59C65D008344BB /* MealPackApp.swift */,
 				430E27832A59C65D008344BB /* ContentView.swift */,
+				430E27AF2A59D634008344BB /* Components */,
+				430E27AB2A59C6D9008344BB /* ViewModel.swift */,
+				430E27AD2A59C734008344BB /* Model.swift */,
 				430E27852A59C65D008344BB /* Assets.xcassets */,
 				430E27872A59C65D008344BB /* Preview Content */,
 			);
@@ -125,6 +136,15 @@
 				430E279E2A59C65E008344BB /* MealPackUITestsLaunchTests.swift */,
 			);
 			path = MealPackUITests;
+			sourceTree = "<group>";
+		};
+		430E27AF2A59D634008344BB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				430E27B22A59D722008344BB /* AsyncImage.swift */,
+				430E27B02A59D645008344BB /* RecipePreview.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +278,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				430E27842A59C65D008344BB /* ContentView.swift in Sources */,
+				430E27B32A59D722008344BB /* AsyncImage.swift in Sources */,
+				430E27AC2A59C6D9008344BB /* ViewModel.swift in Sources */,
+				430E27B12A59D645008344BB /* RecipePreview.swift in Sources */,
 				430E27822A59C65D008344BB /* MealPackApp.swift in Sources */,
+				430E27AE2A59C734008344BB /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
