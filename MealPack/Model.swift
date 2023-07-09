@@ -16,8 +16,8 @@ class Model: ObservableObject {
 
     func getRecipes() {
         let users: [User] = [
-            User(id: 1, phone: "+1-202-555-0101", name: "Fiona Fruit", avatar: "fiona_fruit.png"),
-            User(id: 2, phone: "+1-202-555-0102", name: "Vera Veggie", avatar: "vera_veggie.png"),
+            User(id: 1, phone: "+1-202-555-0101", name: "Fiona Fruit", avatar: "https://cloud-qji7uh19g-hack-club-bot.vercel.app/0image.png"),
+            User(id: 2, phone: "+1-202-555-0102", name: "Vera Veggie", avatar: "https://cloud-il86laq1k-hack-club-bot.vercel.app/0image.png"),
             User(id: 3, phone: "+1-202-555-0103", name: "Gary Grain", avatar: "gary_grain.png"),
             User(id: 4, phone: "+1-202-555-0104", name: "Lena Lentil", avatar: "lena_lentil.png"),
             User(id: 5, phone: "+1-202-555-0105", name: "Oscar Organic", avatar: "oscar_organic.png")

@@ -19,11 +19,11 @@ struct RecipePreview: View {
                     .multilineTextAlignment(.leading)
                 
                 HStack {
-                    AsyncImage(urlString: "https://cloud-1idte52h8-hack-club-bot.vercel.app/0logo.png")
+                    AsyncImage(urlString: recipe?.author.avatar ?? "")
                         .frame(width: 28, height: 28)
                         .cornerRadius(14)
 
-                    Text("Author Name")
+                    Text(recipe?.author.name ?? "")
                         .font(.subheadline)
                 }
                 .padding(.trailing, 0) // Remove the trailing padding
